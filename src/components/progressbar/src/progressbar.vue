@@ -18,7 +18,7 @@
     </div>
 </template>
 
-<script type="text/babel">
+<script>
     import {isColor, getScrollview, checkInview} from '../../../utils/assist';
 
     export default {

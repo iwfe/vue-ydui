@@ -2,7 +2,7 @@
     <div class="m-button"><slot></slot></div>
 </template>
 
-<script type="text/babel">
+<script>
     export default {
         name: 'yd-button-group'
     }

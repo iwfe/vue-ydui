@@ -2,7 +2,7 @@
     <input type="checkbox" class="m-switch" :disabled="disabled" v-model="checked" :style="{color: color}"/>
 </template>
 
-<script type="text/babel">
+<script>
     import {isColor} from '../../../utils/assist';
 
     /**

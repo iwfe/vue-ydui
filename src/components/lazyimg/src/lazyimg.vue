@@ -2,7 +2,7 @@
     <img :src="defaultSrc" :datasrc="src">
 </template>
 
-<script type="text/babel">
+<script>
     // TODO 还未完善
     import {getScrollview, checkInview} from '../../../utils/assist';
 

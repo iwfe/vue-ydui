@@ -53,7 +53,7 @@
     </div>
 </template>
 
-<script type="text/babel">
+<script>
     import {addClass, removeClass, getScrollview} from '../../../utils/assist';
     import Citys from './ydui.citys';
 

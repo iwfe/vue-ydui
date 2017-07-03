@@ -14,7 +14,7 @@
     </div>
 </template>
 
-<script type="text/babel">
+<script>
     import {getScrollview} from '../../../utils/assist';
 
     export default {

@@ -28,7 +28,7 @@
     </div>
 </template>
 
-<script type="text/babel">
+<script>
     import {addClass, removeClass, getScrollview, pageScroll} from '../../../utils/assist';
 
     export default {

@@ -9,7 +9,7 @@
     </router-link>
 </template>
 
-<script type="text/babel">
+<script>
     export default {
         name: 'yd-grids-item',
         props: {

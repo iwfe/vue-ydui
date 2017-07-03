@@ -5,7 +5,9 @@
         </div>
         <div class="navbar-center-box" :style="{height: height}">
             <div class="navbar-center">
-                <slot name="center"><span class="center-title" :style="{color: color, fontSize: fontsize}">{{title}}</span></slot>
+                <slot name="center">
+                    <span class="center-title" :style="{color: color, fontSize: fontsize}">{{title}}</span>
+                </slot>
             </div>
         </div>
         <div class="navbar-item">
@@ -14,49 +16,49 @@
     </header>
 </template>
 
-<script type="text/babel">
-    import {isColor} from '../../../utils/assist';
+<script>
+import { isColor } from '../../../utils/assist';
 
-    export default {
-        name: 'yd-navbar',
-        props: {
-            title: String,
-            fixed: Boolean,
-            bgcolor: {
-                validator(value) {
-                    if(!value) return true;
-                    return isColor(value);
-                },
-                default: '#FFF'
+export default {
+    name: 'yd-navbar',
+    props: {
+        title: String,
+        fixed: Boolean,
+        bgcolor: {
+            validator (value) {
+                if (!value) return true;
+                return isColor(value);
             },
-            color: {
-                validator(value) {
-                    if(!value) return true;
-                    return isColor(value);
-                },
-                default: '#5C5C5C'
-            },
-            fontsize: {
-                validator(value) {
-                    return /^(\.|\d+\.)?\d+(px|rem)$/.test(value);
-                },
-                default: '.4rem'
-            },
-            height: {
-                validator(value) {
-                    return /^(\.|\d+\.)?\d+(px|rem)$/.test(value);
-                },
-                default: '.9rem'
-            }
+            default: '#FFF'
         },
-        computed: {
-            classes() {
-                return this.fixed ? 'navbar-fixed' : '';
-            }
+        color: {
+            validator (value) {
+                if (!value) return true;
+                return isColor(value);
+            },
+            default: '#5C5C5C'
+        },
+        fontsize: {
+            validator (value) {
+                return /^(\.|\d+\.)?\d+(px|rem)$/.test(value);
+            },
+            default: '.4rem'
+        },
+        height: {
+            validator (value) {
+                return /^(\.|\d+\.)?\d+(px|rem)$/.test(value);
+            },
+            default: '.9rem'
+        }
+    },
+    computed: {
+        classes () {
+            return this.fixed ? 'navbar-fixed' : '';
         }
     }
+}
 </script>
 
 <style lang="less">
-    @import '../../../styles/components/navbar.less';
+@import '../../../styles/components/navbar.less';
 </style>

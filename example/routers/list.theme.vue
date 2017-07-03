@@ -23,7 +23,7 @@
     </yd-layout>
 </template>
 
-<script type="text/babel">
+<script>
     export default {
         computed: {
             theme() {

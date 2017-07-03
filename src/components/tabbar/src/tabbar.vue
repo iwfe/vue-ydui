@@ -4,7 +4,7 @@
     </footer>
 </template>
 
-<script type="text/babel">
+<script>
     import {isColor} from '../../../utils/assist';
 
     export default {
