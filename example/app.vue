@@ -3,6 +3,6 @@
 </template>
 
 <style lang="less">
-    @import "./styles/demo.less";
-    @import "../src/styles/base.less";
+@import "./styles/demo.less";
+@import "../src/styles/base.less";
 </style>

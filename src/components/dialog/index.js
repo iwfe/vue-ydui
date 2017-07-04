@@ -5,9 +5,9 @@ import Notify from './src/notify';
 import Loading from './src/loading';
 
 export {
-    Confirm,
-    Alert,
-    Toast,
-    Notify,
-    Loading
+  Confirm,
+  Alert,
+  Toast,
+  Notify,
+  Loading
 };

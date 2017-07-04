@@ -1,14 +1,14 @@
 <template>
-    <div class="slider-item">
-        <slot></slot>
-    </div>
+  <div class="slider-item">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'yd-slider-item',
-        mounted() {
-            this.$parent.init();
-        }
-    }
+export default {
+  name: 'yd-slider-item',
+  mounted () {
+    this.$parent.init();
+  }
+}
 </script>

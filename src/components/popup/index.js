@@ -1,2 +1,2 @@
 import Popup from './src/popup.vue';
-export {Popup};
+export { Popup };
